@@ -14,11 +14,34 @@
 
 .eventos__item {
     display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto repeat(2, 1fr) auto;
     grid-template-areas: 
         "imagem imagem"
         "nome nome"
         "data data"
-        "local botao";
+        "endereco botao"
+    ;
+}
+
+.eventos__item img {
+    grid-area: imagem;
+}
+
+.eventos__item h3 {
+    grid-area: nome;
+}
+
+.eventos__item h4 {
+    grid-area: data;
+}
+
+.eventos__item h4 {
+    grid-area: endereco;
+}
+
+.eventos__item button {
+    grid-area: botao;
 }
 
 @media (min-width: 720px) {
