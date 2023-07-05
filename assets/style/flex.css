@@ -52,6 +52,17 @@
     flex-grow: 1;
 }
 
+/* Rodape */
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo {
+    align-self: flex-end;
+}
+
 @media (min-width: 720px) {
     /* Cabeçalho */
     .menu {
